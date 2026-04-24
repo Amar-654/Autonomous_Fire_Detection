@@ -1,0 +1,45 @@
+[0.015s] Invoking command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/amarnandi/MAR_abhi/Autonomous-robot-for-fire-detection/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amarnandi/MAR_abhi/install/yolobot_recognition
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.108s] -- Detecting C compiler ABI info
+[0.157s] -- Detecting C compiler ABI info - done
+[0.163s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.163s] -- Detecting C compile features
+[0.163s] -- Detecting C compile features - done
+[0.166s] -- Detecting CXX compiler ABI info
+[0.224s] -- Detecting CXX compiler ABI info - done
+[0.230s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.230s] -- Detecting CXX compile features
+[0.230s] -- Detecting CXX compile features - done
+[0.233s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.363s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.443s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.508s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.512s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.513s] -- Added test 'lint_cmake' to check CMake code style
+[0.514s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.517s] -- Added test 'xmllint' to check XML markup files
+[0.517s] -- Configuring done
+[0.519s] -- Generating done
+[0.520s] -- Build files have been written to: /home/amarnandi/MAR_abhi/build/yolobot_recognition
+[0.523s] Invoked command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/amarnandi/MAR_abhi/Autonomous-robot-for-fire-detection/src/yolobot_recognition -DCMAKE_INSTALL_PREFIX=/home/amarnandi/MAR_abhi/install/yolobot_recognition
+[0.524s] Invoking command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/amarnandi/MAR_abhi/build/yolobot_recognition -- -j12 -l12
+[0.558s] Invoked command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/amarnandi/MAR_abhi/build/yolobot_recognition -- -j12 -l12
+[0.559s] Invoking command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/amarnandi/MAR_abhi/build/yolobot_recognition
+[0.567s] -- Install configuration: ""
+[0.568s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/ament_index/resource_index/package_run_dependencies/yolobot_recognition
+[0.568s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/ament_index/resource_index/parent_prefix_path/yolobot_recognition
+[0.569s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.sh
+[0.569s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/environment/ament_prefix_path.dsv
+[0.569s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/environment/path.sh
+[0.570s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/environment/path.dsv
+[0.570s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/local_setup.bash
+[0.570s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/local_setup.sh
+[0.570s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/local_setup.zsh
+[0.570s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/local_setup.dsv
+[0.571s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/package.dsv
+[0.571s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/ament_index/resource_index/packages/yolobot_recognition
+[0.571s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig.cmake
+[0.571s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/cmake/yolobot_recognitionConfig-version.cmake
+[0.571s] -- Installing: /home/amarnandi/MAR_abhi/install/yolobot_recognition/share/yolobot_recognition/package.xml
+[0.590s] Invoked command in '/home/amarnandi/MAR_abhi/build/yolobot_recognition' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/amarnandi/turtlebot3_ws/install/turtlebot3_teleop:/home/amarnandi/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/amarnandi/MAR_abhi/build/yolobot_recognition
