@@ -1,12 +1,27 @@
 # 🔥 Autonomous Fire Detection Robot (ROS 2 + YOLOv5)
 
-An autonomous robotic system designed to detect fire in real-time using computer vision and deep learning. The robot operates in a simulated environment and continuously monitors surroundings using a camera, detecting fire using a YOLOv5 model.
+An autonomous robotic system designed to detect fire in real-time using computer vision and deep learning. The robot operates in a simulated warehouse-like environment, continuously monitoring surroundings using a camera and detecting fire using a YOLOv5 model.
 
 ---
 
-## 📌 Overview
+## 📌 Project Description
 
-This project integrates robotics, simulation, and AI to build a fire detection system. The robot patrols an environment, captures live camera data, and processes it using a deep learning model to identify fire and trigger alerts.
+Fire accidents in warehouses can cause severe damage due to the presence of flammable materials. This project presents an intelligent robotic solution that autonomously patrols an environment and detects fire early using AI. The system combines robotics, simulation, and deep learning to improve safety and reduce human risk.
+
+---
+
+## ⚙️ How the System Works
+
+1. The robot moves inside a simulated environment using predefined motion commands.
+2. A camera mounted on the robot captures real-time video frames.
+3. These frames are published over a ROS 2 topic (`/rgb_cam/image_raw`).
+4. A detection node subscribes to this topic and processes each frame.
+5. The YOLOv5 model analyzes the image and detects fire.
+6. If confidence > 60%:
+   - A bounding box is drawn
+   - An alert message is triggered
+
+The system runs asynchronously, meaning movement and detection happen simultaneously without blocking each other.
 
 ---
 
@@ -17,7 +32,7 @@ This project integrates robotics, simulation, and AI to build a fire detection s
 - 📡 ROS 2-based modular communication
 - 🌍 3D simulation using Gazebo
 - 🎯 Bounding box visualization and alert system
-- ⚡ Asynchronous processing (movement + detection)
+- ⚡ Parallel processing (navigation + detection)
 
 ---
 
@@ -36,30 +51,62 @@ This project integrates robotics, simulation, and AI to build a fire detection s
 ## 📂 Project Structure
 
 src/
-├── yolobot_description/
-├── yolobot_gazebo/
-├── yolobot_control/
-├── yolobot_recognition/
+├── yolobot_description/   # Robot model (URDF)
+├── yolobot_gazebo/       # Simulation world
+├── yolobot_control/      # Movement logic
+├── yolobot_recognition/  # Fire detection (YOLOv5)
 
 ---
 
 ## ▶️ How to Run
 
-1. Setup workspace
-2. Launch simulation
-3. Run control node
-4. Run detection node
+### 🔹 1. Setup Workspace
+```bash
+cd ~/ROS/Autonomous-robot-for-fire-detection
+colcon build
+source install/setup.bash
+```
 
 ---
 
-## 🎯 Results
+### 🔹 2. Launch Simulation & Control Node
+```bash
+ros2 launch yolobot_gazebo yolobot_launch.py
+```
 
-- Real-time fire detection
+---
+
+### 🔹 3. Run Detection Node
+```bash
+cd ~/ROS/Autonomous-robot-for-fire-detection
+source install/setup.bash
+cd src/yolobot_recognition/scripts
+python3 ros_recognition_yolo.py
+```
+
+---
+
+## 📊 Results
+
+- Accurate real-time fire detection
 - Smooth robot navigation
 - Reliable ROS2 communication
+- Reduced false detections using confidence threshold
 
 ---
 
-## 👨‍💻 Author
+## ⚠️ Challenges
 
-Abhishek Patil
+- Integration of YOLOv5 with ROS2 pipeline  
+- Crashes in Gazebo and RViz  
+- Tuning detection confidence  
+- Debugging ROS2 communication  
+
+---
+
+## 🔮 Future Improvements
+
+- Add SLAM for autonomous navigation
+- Integrate thermal sensors
+- Deploy on real robot hardware
+- Add fire suppression mechanism
